@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import './App.css'
 import Card from './components/Card.jsx'
+import Home from './components/Home.jsx'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -20,6 +21,7 @@ function App() {
       {
         user.map((item) =>(<Card key = {item.id} {...item}/>))
       }
+      <Home/>
     </>
   )
 }
